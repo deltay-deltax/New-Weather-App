@@ -1,0 +1,57 @@
+name: news_weather_app
+description: "A weather and news dashboard mobile application with advanced Flutter concepts."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  # Networking & API
+  dio: ^5.4.3
+
+  # Local Storage & Caching
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Location Services
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+  # UI/UX & Animations
+  intl: ^0.18.1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+  # URL and Sharing
+  url_launcher: ^6.2.2
+  share_plus: ^7.2.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # REMOVED: flutter_local_notifications (causing build issues)
+  # REMOVED: workmanager (causing Kotlin compilation errors)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
